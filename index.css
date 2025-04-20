@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+  }
+  h2{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #338A95;
+  }
+
+  h3{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #f4a363;
+  }
+
+/* HEADER*/
+
+  header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  header .base {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+  }
+
+  header .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;       /* se adapta a la proporción natural */
+    max-height: 80%;    /* opcional: evita que sea demasiado grande */
+    z-index: 2;
+  }
+  
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #A1E0E2;
+    gap: 5vw;
+    border-radius: 10px;
+    min-height: 50px;
+    flex-wrap: wrap;
+  }
+  nav a{
+    color: #338A95;
+    text-decoration: none;
+  }
+  /*SECTIONS*/
+
+  .content {
+    max-width: 80vw;
+    margin: 8vh auto;
+  }
+
+  .servicios strong{
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #f4a363;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+  
+  li::before {
+    content: "\f14a"; /* Unicode del icono fa-square-check */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400; /* Regular */
+    color: #f4a363;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .quienes img{
+    width: 20vw;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .quienesContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vw;
+  }
+
+  .quienes div p {
+    text-align: left;
+  }
+
+  .contacto {
+    background-color: #A1E0E2;
+    width: 100%;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10vh;
+  }
+
+  .contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .contacto strong{
+    margin-bottom: 1rem;
+  }
+
+  button {
+    margin: 1rem;
+    background: #338A95; 
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+
+
+  footer {
+    background-color: #1F545B;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .quienesContainer {
+      flex-direction: column;
+      text-align: center;
+    }
+    .quienes img {
+    width: 50vw;
+    margin-bottom: 1.5rem;
+    }
+    .quienes div p {
+      text-align: left;
+    }
+
+  }
+  
